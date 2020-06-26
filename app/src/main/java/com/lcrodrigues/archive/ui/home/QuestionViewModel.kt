@@ -1,13 +1,19 @@
 package com.lcrodrigues.archive.ui.home
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.lcrodrigues.archive.MemoryObject
+import com.lcrodrigues.archive.Question
 
 class QuestionViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    init {
+        MemoryObject.createQuestionsList()
     }
-    val text: LiveData<String> = _text
+
+    var currentQuestion: MutableLiveData<Question> = MutableLiveData()
+
+    fun getQuestion() {
+        val question = MemoryObject.getQuestion()
+        currentQuestion.postValue(question)
+    }
 }

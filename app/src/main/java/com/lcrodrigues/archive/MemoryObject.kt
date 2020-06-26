@@ -1,8 +1,11 @@
 package com.lcrodrigues.archive
 
+import kotlin.random.Random
+
 object MemoryObject {
 
     private val questionsList: ArrayList<Question> = arrayListOf()
+    private val exhibitedQuestions: ArrayList<Int> = arrayListOf()
 
     fun createQuestionsList() {
         questionsList.addAll(
@@ -56,8 +59,21 @@ object MemoryObject {
         )
     }
 
-    fun getQuestion(): Question {
-        return questionsList[0]
+    fun getQuestion(): Question? {
+        var position: Int? = null
+
+        if (exhibitedQuestions.size != questionsList.size) {
+            do {
+                position = Random.nextInt(0, questionsList.size)
+            } while (exhibitedQuestions.contains(position))
+        }
+
+        return if (position != null) {
+            exhibitedQuestions.add(position)
+            questionsList[position]
+        } else {
+            null
+        }
     }
 
 }
