@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.home.QuestionFragment">
+
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="73" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/number"
+                tools:text="Produto do fim da Guerra Fria, a Convenção sobre a Proibição das Armas Químicas (CPAQ) marcou um momento  novo  das  relações  internacionais  no  campo  da  segurança.  Aberta  para  assinaturas  em  Paris, em janeiro de 1993, após cerca de duas décadas de negociações  na  Conferência  do  Desarmamento  em Genebra, a CPAQ entrou em vigor em abril de 1997. Ao abrir a I Conferência dos Estados-Partes na CPAQ, em  Haia,  o  secretário-geral  da  ONU,  Kofi  Annan, descreveu o evento como um “momentoso ato de paz”. Disse: “O que vocês fizeram com sua livre vontade foi anunciar a essa e a todas as futuras gerações que as armas químicas são instrumentos que nenhum Estado com  algum  respeito  por  si  mesmo  e  nenhum  povo com  algum  senso  de  dignidade  usaria  em  conflitos domésticos ou internacionais”." />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/description"
+                app:layout_constraintStart_toStartOf="@+id/description"
+                app:layout_constraintTop_toBottomOf="@+id/description"
+                tools:text="BUSTANI, J. M. A Convenção sobre a Proibição de Armas Químicas: trajetória futura. Parcerias Estratégicas, n. 9, out. 2000." />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/source"
+                app:layout_constraintStart_toStartOf="@+id/description"
+                app:layout_constraintTop_toBottomOf="@+id/source"
+                tools:text="O  que  a  Convenção  representou  para  o  cenário geopolítico mundial?" />
+
+            <RadioGroup
+                android:id="@+id/options"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/question"
+                app:layout_constraintStart_toStartOf="@+id/question"
+                app:layout_constraintTop_toBottomOf="@+id/question">
+
+                <RadioButton
+                    android:id="@+id/firstOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Esgotamento dos pactos bélicos multilaterais." />
+
+                <RadioButton
+                    android:id="@+id/secondOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Restrição aos complexos industriais militares." />
+
+                <RadioButton
+                    android:id="@+id/thirdOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Enfraquecimento de blocos políticos regionais." />
+
+                <RadioButton
+                    android:id="@+id/fourthOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Cerceamento às agências de inteligência estatal." />
+
+                <RadioButton
+                    android:id="@+id/fifthOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Desestabilização   das   empresas   produtoras   de   munições." />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answerExplanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/options"
+                app:layout_constraintStart_toStartOf="@+id/options"
+                app:layout_constraintTop_toBottomOf="@+id/options"
+                tools:text="Correto! Com o acordo, o desenvolvimento de armas químicas tornou-se proibido, limitando o desenvolvimento desse tipo de armamento por parte dos complexos industriais militares." />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Selecionar resposta"
+                app:layout_constraintStart_toStartOf="@id/answerExplanation"
+                app:layout_constraintTop_toBottomOf="@id/answerExplanation" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Próxima questão"
+                app:layout_constraintEnd_toEndOf="@id/answerExplanation"
+                app:layout_constraintTop_toBottomOf="@id/answerExplanation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
