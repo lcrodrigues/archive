@@ -8,13 +8,13 @@
     <fragment
         android:id="@+id/nav_question"
         android:name="com.lcrodrigues.archive.ui.home.QuestionFragment"
-        android:label="@string/menu_home"
+        android:label="@string/menu_questions"
         tools:layout="@layout/fragment_question" />
 
     <fragment
         android:id="@+id/nav_about"
         android:name="com.lcrodrigues.archive.ui.about.AboutFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_about"
         tools:layout="@layout/fragment_about">
     </fragment>
 
