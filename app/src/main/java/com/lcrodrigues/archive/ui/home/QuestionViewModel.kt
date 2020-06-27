@@ -1,5 +1,6 @@
 package com.lcrodrigues.archive.ui.home
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.lcrodrigues.archive.MemoryObject
@@ -18,7 +19,6 @@ class QuestionViewModel : ViewModel() {
     }
 
     fun getAnswerAndExplanation(selectedOption: String): String {
-
         var result: String = if (selectedOption == currentQuestion.value?.rightAnswer) {
             "Opção correta! "
         } else {

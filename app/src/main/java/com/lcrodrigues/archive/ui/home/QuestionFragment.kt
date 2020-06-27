@@ -55,10 +55,11 @@ class QuestionFragment : Fragment() {
         }
 
         binding.selectAnswerButton.setOnClickListener {
-            binding.answerExplanation.visibility = View.VISIBLE
-            val response = getOptionLetter()
-            binding.answerExplanation.text = questionViewModel.getAnswerAndExplanation(response ?: "")
-            closeQuestion()
+            getOptionLetter()?.let { selectedAnswer ->
+                binding.answerExplanation.visibility = View.VISIBLE
+                binding.answerExplanation.text = questionViewModel.getAnswerAndExplanation(selectedAnswer)
+                closeQuestion()
+            }
         }
     }
 
