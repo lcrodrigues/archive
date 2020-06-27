@@ -14,6 +14,18 @@ class QuestionViewModel : ViewModel() {
 
     fun getQuestion() {
         val question = MemoryObject.getQuestion()
-        currentQuestion.postValue(question)
+        currentQuestion.value = question
+    }
+
+    fun getAnswerAndExplanation(selectedOption: String): String {
+
+        var result: String = if (selectedOption == currentQuestion.value?.rightAnswer) {
+            "Opção correta! "
+        } else {
+            "Opção errada. "
+        }
+
+        result += currentQuestion.value?.explanation
+        return result
     }
 }

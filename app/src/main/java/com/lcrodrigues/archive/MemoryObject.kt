@@ -23,7 +23,7 @@ object MemoryObject {
                     "Desestabilização   das   empresas   produtoras   de   munições."
                 ),
                 "B",
-                "Com o acordo, o desenvolvimento de armas químicas tornou-se proibido, limitando o desenvolvimento desse tipo de armamento por parte dos complexos industriais militares."
+                "A opção B é a correta, pois etc etc etc."
                 ),
                 Question(
                     "85",
@@ -38,11 +38,11 @@ object MemoryObject {
                         "conceito de bem comum de Aristóteles."
                     ),
                     "E",
-                    "Vai doer, vai durar."
+                    "A opção E é a correta, pois etc etc etc."
                 ),
                 Question(
                     "86",
-                    "TEXTO IEu  queria  movimento  e  não  um  curso  calmo  da  existência. Queria excitação e perigo e a oportunidade de  sacrificar-me  por  meu  amor.  Sentia  em  mim  uma superabundância  de  energia  que  não  encontrava escoadouro em nossa vida.\n TEXTO IIMeu lema me obrigava, mais que a qualquer outro homem, a um enunciado mais exato da verdade; não sendo suficiente que eu lhe sacrificasse em tudo o meu  interesse  e  as  minhas  simpatias,  era  preciso sacrificar-lhe  também  minha  fraqueza  e  minha natureza tímida. Era preciso ter a coragem e a força de ser sempre verdadeiro em todas as ocasiões.",
+                    "TEXTO I Eu  queria  movimento  e  não  um  curso  calmo  da  existência. Queria excitação e perigo e a oportunidade de  sacrificar-me  por  meu  amor.  Sentia  em  mim  uma superabundância  de  energia  que  não  encontrava escoadouro em nossa vida.\n TEXTO II Meu lema me obrigava, mais que a qualquer outro homem, a um enunciado mais exato da verdade; não sendo suficiente que eu lhe sacrificasse em tudo o meu  interesse  e  as  minhas  simpatias,  era  preciso sacrificar-lhe  também  minha  fraqueza  e  minha natureza tímida. Era preciso ter a coragem e a força de ser sempre verdadeiro em todas as ocasiões.",
                     "TOLSTÓI, L. Felicidade familiar. Apud KRAKAUER, J. Na natureza selvagem. São Paulo: Cia. das Letras, 1998. / ROUSSEAU, J.-J. Os devaneios do caminhante solitário. Porto Alegre: L&PM, 2009.",
                     "Os  textos  de  Tolstói  e  Rousseau  retratam  ideais  da existência humana e defendem uma experiência:",
                     listOf(
@@ -52,8 +52,8 @@ object MemoryObject {
                         "naturalista-científica, marcada pela experimentação, análise e explicação.",
                         "estético-romântica,  caracterizada  por  sinceridade, vitalidade e impulsividade."
                     ),
-                    "E",
-                    "Nada impede a onda de passar."
+                    "E.",
+                    "A opção E é a correta, pois etc etc etc"
                 )
             )
         )
