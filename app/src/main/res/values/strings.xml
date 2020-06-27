@@ -10,4 +10,21 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="project_name">Desarquivando</string>
+    <string name="author_1">Matheus Alvarengo Nascente</string>
+    <string name="author_2">Tainise</string>
+    <string name="author_3">Helô</string>
+    <string name="author_4">Jocar</string>
+    <string name="project_about_title">Sobre o projeto:</string>
+    <string name="project_about_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta, ex sed venenatis tincidunt, ex risus faucibus purus, non commodo lectus dolor a arcu. Sed ut hendrerit turpis. Quisque iaculis faucibus lacus et tempor. Praesent suscipit justo ante, condimentum malesuada purus eleifend quis. </string>
+    <string name="authors_title">Autores:</string>
+    <string name="social_networks">Redes sociais:</string>
+    <string name="twitter">Twitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter_link">https://twitter.com/desarquivando</string>
+    <string name="instagram_link">https://www.instagram.com/desarquivando</string>
+    <string name="facebook_link">https://www.facebook.com/desarquivando/</string>
+
 </resources>
